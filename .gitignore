@@ -1,0 +1,40 @@
+# ============================================
+#  STM32 学习工程 .gitignore
+#  作用：让 git 忽略这些文件，不传上 GitHub
+# ============================================
+
+# ---- Keil 编译产物（每次编译重新生成，传了是垃圾）----
+Objects/
+Listings/
+DebugConfig/
+*.hex
+*.axf
+*.bin
+*.elf
+*.map
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.sct
+*.lst
+*.build_log.htm
+build_log.txt
+*.bak
+*.bak-*
+*.uvguix.*
+
+# ---- 教程原版资料 / 大文件（体积大，网上可下）----
+程序源码/
+下载/
+*.rar
+*.zip
+*.pdf
+STM32F10x_StdPeriph_Lib_V3.5.0/
+
+# ---- 系统与编辑器垃圾 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp

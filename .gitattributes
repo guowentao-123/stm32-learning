@@ -1,0 +1,25 @@
+# ============================================
+#  .gitattributes — 行尾策略
+#  作用：关掉 git 的行尾自动转换，文件原样存取
+# ============================================
+
+# 全部文件禁止行尾转换（CRLF 保持 CRLF，LF 保持 LF）
+# 嵌入式工程对字节一致性敏感，尤其 .s 汇编、链接脚本、Keil 工程 XML
+* -text
+
+# 二进制文件显式声明（避免误判、避免 diff 爆内存）
+*.hex   binary
+*.bin   binary
+*.axf   binary
+*.elf   binary
+*.o     binary
+*.d     binary
+*.crf   binary
+*.dep   binary
+*.lnp   binary
+*.lib   binary
+*.rar   binary
+*.zip   binary
+*.pdf   binary
+*.xls   binary
+*.xlsx  binary
